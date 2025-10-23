@@ -1,0 +1,24 @@
+#home{
+    width: 90%;
+    margin: 10px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .main{
+    width: 22%;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #bebebe;
+    border-radius: 5px;
+    padding: 5px;
+}
+#home .main svg{
+    width: 80%;
+    height: 300px;
+}
+#home .main h3{
+    width: 100%;
+}

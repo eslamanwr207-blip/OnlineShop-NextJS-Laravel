@@ -1,0 +1,1768 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#cartBody{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px
+}
+
+.price-cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.price-cart span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.price-cart .price{
+    width: 40%;
+    color: coral;
+
+}
+
+
+.price-cart .quantity{
+    width: 40%;
+    color: #0fa751;
+
+}
+.price-cart .total {
+    color: #030f2d;
+}
+
+#cart_button{
+    width: 90%;
+    margin: 4px 0;
+}
+
+.hr{
+    background: #989898;
+    height: 1px;
+    margin: 5px 0;
+}
+
+
+@media screen and (min-width:600px) and (max-width:800px){
+    .price-cart span{
+        font-size: 19px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:600px){
+    .container{
+        margin-top: 15px;
+    }
+
+    .price-cart span{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #cart_button{
+        width: 90%;
+        margin: 4px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-section {
+    background: url('../oil.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    animation: slideIn 1.5s ease-in-out;
+
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: scaleUp 1s ease-in-out;
+
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+
+
+
+.section_tow{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+
+}
+
+.first_part {
+    position: relative;  /* حتى يتمركز النص داخلها */
+    width: 40%;  /* عرض أكبر لرؤية التأثير */
+    height: 100vh;
+    overflow: hidden;
+    margin-right: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.first_part:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق الصورة */
+.first_part img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* تنسيق النص فوق الصورة */
+.first_part .text_first_part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; /* تأكد أن النص فوق الصورة */
+}
+
+/* تحسين عرض النص */
+.first_part .text_first_part h5,
+.first_part .text_first_part h1,
+.first_part .text_first_part button {
+    margin: 5px 0;
+}
+
+
+
+.parnt_second_part{
+    display: block;
+    width: 40%;  /* عرض أكبر لرؤية التأثير */
+}
+.second_part {
+    position: relative;  /* حتى يتمركز النص داخلها */
+    height: 48.6vh;
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.second_part:hover {
+    transform: scale(1.05);
+}
+
+/* تنسيق الصورة */
+.second_part img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* تنسيق النص فوق الصورة */
+.second_part .text_second_part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2; /* تأكد أن النص فوق الصورة */
+}
+
+/* تحسين عرض النص */
+.second_part .text_second_part h5,
+.second_part .text_second_part h1,
+.second_part .text_second_part button {
+    margin: 5px 0;
+}
+
+
+
+
+
+.section_three{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* تنسيق عام للمنتج */
+.product {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* صورة المنتج */
+.product img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 15px;
+}
+
+/* عنوان المنتج */
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* عدد الأسطر التي تريد إظهارها */
+    overflow: hidden;
+}
+
+/* تنسيق السعر */
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1rem;
+}
+
+.discounted-price {
+    color: #d9534f;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.discount-badge {
+    background: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* تنسيق الأزرار */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.product-details-btn,
+.cart-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+
+
+.product-details-btn {
+    background-color: #000000;
+    color: white;
+    margin-right: 5px;
+}
+
+.product-details-btn:hover {
+    background-color: #5e6c97;
+    transform: scale(1.05);
+}
+
+.cart-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.cart-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+/* تصميم عام للقسم */
+.reviews-section {
+    text-align: center;
+    padding: 50px 10%;
+    background: #ffffff;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* تصميم البطاقات */
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.review {
+    background: #f5faff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 300px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* تأخير الأنيميشن للبطاقات */
+.review:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+/* النجوم */
+.stars {
+    font-size: 1.3rem;
+    color: #ff9800;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* نص التقييم */
+.review-text {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* بيانات المراجع */
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.reviewer img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.reviewer-info {
+    text-align: left;
+}
+
+.reviewer-info strong {
+    display: block;
+    font-size: 1rem;
+    color: #000;
+}
+
+.reviewer-info span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* أنيميشن ظهور البطاقات */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* جعل التصميم متجاوبًا */
+@media (max-width: 768px) {
+    .review {
+        width: 90%;
+    }
+}
+
+
+
+
+
+.section_four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+/* تنسيق النص ليكون على اليسار */
+.text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* جعل الصورة على اليمين */
+.image-content {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* تنسيق قسم التوصيات */
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.testimonial-box {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* الأيقونات */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 1.5rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+.reviewer_input{
+    width: 100%;
+}
+
+.reviewer_input textarea{
+    width: 100%;
+    height: 30vh;
+
+
+}
+
+.reviewer_input button{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.product_details{
+    color: white;
+    background: #4c7afd;
+    padding: 9px 5px;
+    text-decoration: none;
+    font-size: 15px;
+
+    border-radius: 5px;
+    align-items: center;
+    margin-right: 3px;
+}
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width:800px){
+    .hero-section {
+        height: 60vh;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:800px) and (max-width:1000px){
+
+    .first_part {
+        height: 80vh;
+
+    }
+
+    .second_part {
+        height: 38.5vh;
+
+    }
+
+
+    .product_details{
+        color: white;
+        background: #4c7afd;
+        padding: 9px 5px;
+        text-decoration: none;
+        font-size: 15px;
+
+        border-radius: 5px;
+        align-items: center;
+        margin-right: 3px;
+    }
+
+}
+
+
+@media screen and (min-width:600px) and (max-width:800px){
+
+    .section_tow{
+
+        margin: 10px;
+        margin: auto;
+
+
+    }
+    .first_part {
+        width: 50%;
+        height: 70vh;
+
+    }
+
+    .second_part {
+        height: 33.6vh;
+        margin: 20px 0;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .section_three{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* تنسيق عام للمنتج */
+    .product {
+        width: 250px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-bottom: 20px;
+        margin: 20px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+
+    /* صورة المنتج */
+    .product img {
+        height: 230px;
+
+
+    }
+
+    /* عنوان المنتج */
+
+    /* تنسيق الأزرار */
+
+    .product-details-btn,
+    .cart-btn {
+        flex: 1;
+        padding: 10px 5px;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    .product-details-btn {
+        background-color: #007bff;
+        color: white;
+        margin-right: 5px;
+    }
+
+    .product-details-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    .cart-btn {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .cart-btn:hover {
+        background-color: #218838;
+        transform: scale(1.05);
+    }
+
+
+
+    .section_four {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 5rem 0;
+    }
+
+    /* تنسيق النص ليكون على اليسار */
+    .text-content {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .text-content h1{
+        font-size: 30px;
+    }
+    .text-content p {
+        font-size: 20px;
+    }
+
+
+    /* جعل الصورة على اليمين */
+    .image-content {
+        flex: 1;
+        max-width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        height: 50vh;
+
+    }
+
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* تنسيق قسم التوصيات */
+    .testimonial-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+        background-color: #f8f9fa;
+    }
+
+    .testimonial-box {
+        background: white;
+        padding: 2rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .product_details{
+        color: white;
+        background: #4c7afd;
+        padding: 9px 5px;
+        text-decoration: none;
+        font-size: 15px;
+
+        border-radius: 5px;
+        align-items: center;
+        margin-right: 3px;
+    }
+
+
+
+
+
+}
+
+
+
+@media screen and (min-width:400px) and (max-width:600px){
+
+    .section_tow{
+
+        margin: 10px;
+        margin-top: 30px;
+
+
+
+    }
+    .first_part {
+        width: 50%;
+        height: 50vh;
+        margin: 0;
+
+    }
+    .parnt_second_part{
+        display: block;
+        width: 48%;  /* عرض أكبر لرؤية التأثير */
+    }
+    .second_part {
+        width: 80%;
+        height: 24vh;
+        margin: 10px;
+
+
+    }
+
+
+    /* تنسيق عام للمنتج */
+    .product {
+        width: 250px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        margin: 20px;
+    }
+
+
+
+    /* صورة المنتج */
+    .product img {
+        height: 230px;
+        width: 47%;
+
+
+    }
+
+    /* عنوان المنتج */
+    .product-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    /* تنسيق السعر */
+    .price-container {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .original-price {
+        font-size: 1rem;
+    }
+
+    .discounted-price {
+        font-size: 1.3rem;
+    }
+
+    .discount-badge {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+    }
+
+    /* تنسيق الأزرار */
+    .button-group {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .product-details-btn,
+    .cart-btn {
+        padding: 10px 5px;
+        font-size: 1rem;
+        border-radius: 5px;
+
+    }
+
+    .product-details-btn {
+        margin-right: 5px;
+    }
+
+
+
+
+
+
+
+
+
+    .section_four {
+        gap: 2rem;
+        padding: 5rem 0;
+    }
+
+    /* تنسيق النص ليكون على اليسار */
+    .text-content {
+        max-width: 50%;
+    }
+
+    .text-content h1{
+        font-size: 30px;
+    }
+    .text-content p {
+        font-size: 20px;
+    }
+
+
+    /* جعل الصورة على اليمين */
+    .image-content {
+        max-width: 50%;
+        height: 50vh;
+
+    }
+
+    .image-content img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    /* تنسيق قسم التوصيات */
+    .testimonial-section {
+        padding: 5rem 0;
+    }
+
+    .testimonial-box {
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 500px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section_three{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* تنسيق عام للمنتج */
+    .product {
+        width: 44%;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        margin: 10px;
+    }
+
+
+    /* صورة المنتج */
+    .product img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    /* عنوان المنتج */
+    .product-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .original-price {
+        font-size: 16px;
+    }
+
+    .discounted-price {
+        font-size: 16px;
+    }
+
+    .discount-badge {
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    /* تنسيق الأزرار */
+    .button-group {
+        display: block;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .product-details-btn,
+    .cart-btn {
+        width: 100%;
+        padding: 5px 10px;
+        margin: 5px 0px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    .product-details-btn {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+
+
+    .section_four {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    /* تنسيق النص ليكون على اليسار */
+    .text-content {
+        max-width: 50%;
+    }
+
+    .text-content h1{
+        font-size: 23px;
+    }
+    .text-content p {
+        font-size: 15px;
+    }
+
+
+    /* جعل الصورة على اليمين */
+    .image-content {
+        max-width: 100%;
+        height: 30vh;
+
+    }
+
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+
+    .product_details{
+        color: white;
+        background: #4c7afd;
+        padding: 5px 21px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:350px) and (max-width:400px){
+
+    .section_tow{
+
+        margin: 10px;
+        margin-top: 30px;
+
+
+
+    }
+    .first_part {
+        width: 50%;
+        height: 44vh;
+        margin: 0;
+
+    }
+    .parnt_second_part{
+        display: block;
+        width: 48%;  /* عرض أكبر لرؤية التأثير */
+    }
+    .second_part {
+        width: 90%;
+        height: 21vh;
+        margin: 10px;
+
+
+    }
+
+
+    /* تنسيق عام للمنتج */
+    .product {
+        width: 100px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        margin: 20px;
+    }
+
+
+
+    /* صورة المنتج */
+    .product img {
+        height: 230px;
+
+
+    }
+
+    /* عنوان المنتج */
+    .product-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    /* تنسيق السعر */
+    .price-container {
+        margin-bottom: 5px;
+    }
+
+    .original-price {
+        font-size: 1rem;
+    }
+
+    .discounted-price {
+        font-size: 1.3rem;
+    }
+
+    .discount-badge {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+    }
+
+    /* تنسيق الأزرار */
+    .button-group {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .product-details-btn,
+    .cart-btn {
+        padding: 5px 5px;
+        font-size: 7rem;
+        border-radius: 5px;
+
+    }
+
+    .product-details-btn {
+        margin-right: 5px;
+    }
+
+
+
+
+
+
+
+
+
+    .section_four {
+        gap: 2rem;
+        padding: 5rem 0;
+    }
+
+    /* تنسيق النص ليكون على اليسار */
+    .text-content {
+        max-width: 50%;
+    }
+
+    .text-content h1{
+        font-size: 30px;
+    }
+    .text-content p {
+        font-size: 20px;
+    }
+
+
+    /* جعل الصورة على اليمين */
+    .image-content {
+        max-width: 50%;
+        height: 50vh;
+
+    }
+
+    .image-content img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    /* تنسيق قسم التوصيات */
+    .testimonial-section {
+        padding: 5rem 0;
+    }
+
+    .testimonial-box {
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 500px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section_three{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* تنسيق عام للمنتج */
+    .product {
+        width: 47%;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        margin: 5px;
+    }
+
+
+    /* صورة المنتج */
+    .product img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    /* عنوان المنتج */
+    .product-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+
+
+    .original-price {
+        font-size: 14px;
+    }
+
+    .discounted-price {
+        font-size: 14px;
+    }
+
+    .discount-badge {
+        padding: 5px 5px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    /* تنسيق الأزرار */
+    .button-group {
+        display: block;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .product-details-btn,
+    .cart-btn {
+        width: 100%;
+        padding: 5px 10px;
+        margin: 5px 0px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .product-details-btn {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+
+
+    .section_four {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    /* تنسيق النص ليكون على اليسار */
+    .text-content {
+        max-width: 50%;
+    }
+
+    .text-content h1{
+        font-size: 19px;
+    }
+    .text-content p {
+        font-size: 14px;
+    }
+
+
+    /* جعل الصورة على اليمين */
+    .image-content {
+        max-width: 100%;
+        height: 30vh;
+
+    }
+
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* تنسيق قسم التوصيات */
+
+
+
+
+    .reviews-section .section-title{
+        font-size: 25px;
+    }
+
+
+    .reviewer_input{
+        width: 100%;
+    }
+
+    .reviewer_input textarea{
+        width: 100%;
+        height: 30vh;
+
+
+    }
+
+    .reviewer_input button{
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width:0px) and (max-width:350px){
+
+    .section_tow{
+
+        margin: 10px;
+        margin-top: 30px;
+
+
+
+    }
+    .first_part {
+        width: 50%;
+        height: 44vh;
+        margin: 0;
+
+    }
+    .parnt_second_part{
+        display: block;
+        width: 48%;  /* عرض أكبر لرؤية التأثير */
+    }
+    .second_part {
+        width: 90%;
+        height: 21vh;
+        margin: 10px;
+
+
+    }
+
+
+    /* تنسيق عام للمنتج */
+    .product {
+        width: 100px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        margin: 20px;
+    }
+
+
+
+    /* صورة المنتج */
+    .product img {
+        height: 230px;
+
+
+    }
+
+    /* عنوان المنتج */
+    .product-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    /* تنسيق السعر */
+    .price-container {
+        margin-bottom: 5px;
+    }
+
+    .original-price {
+        font-size: 1rem;
+    }
+
+    .discounted-price {
+        font-size: 1.3rem;
+    }
+
+    .discount-badge {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+    }
+
+    /* تنسيق الأزرار */
+    .button-group {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .product-details-btn,
+    .cart-btn {
+        padding: 5px 5px;
+        font-size: 7rem;
+        border-radius: 5px;
+
+    }
+
+    .product-details-btn {
+        margin-right: 5px;
+    }
+
+
+
+
+
+
+
+
+
+    .section_four {
+        gap: 2rem;
+        padding: 5rem 0;
+    }
+
+    /* تنسيق النص ليكون على اليسار */
+    .text-content {
+        max-width: 50%;
+    }
+
+    .text-content h1{
+        font-size: 30px;
+    }
+    .text-content p {
+        font-size: 20px;
+    }
+
+
+    /* جعل الصورة على اليمين */
+    .image-content {
+        max-width: 50%;
+        height: 50vh;
+
+    }
+
+    .image-content img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    /* تنسيق قسم التوصيات */
+    .testimonial-section {
+        padding: 5rem 0;
+    }
+
+    .testimonial-box {
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 500px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section_three{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* تنسيق عام للمنتج */
+    .product {
+        width: 90%;
+        border-radius: 5px;
+        padding-bottom: 10px;
+        margin: 5px;
+    }
+
+
+    /* صورة المنتج */
+    .product img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    /* عنوان المنتج */
+    .product-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+
+
+    .original-price {
+        font-size: 14px;
+    }
+
+    .discounted-price {
+        font-size: 14px;
+    }
+
+    .discount-badge {
+        padding: 5px 5px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    /* تنسيق الأزرار */
+    .button-group {
+        display: block;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .product-details-btn,
+    .cart-btn {
+        width: 100%;
+        padding: 5px 10px;
+        margin: 5px 0px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .product-details-btn {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+
+
+    .section_four {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    /* تنسيق النص ليكون على اليسار */
+    .text-content {
+        max-width: 50%;
+    }
+
+    .text-content h1{
+        font-size: 19px;
+    }
+    .text-content p {
+        font-size: 14px;
+    }
+
+
+    /* جعل الصورة على اليمين */
+    .image-content {
+        max-width: 100%;
+        height: 30vh;
+
+    }
+
+    .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* تنسيق قسم التوصيات */
+
+
+
+
+    .reviews-section .section-title{
+        font-size: 25px;
+    }
+
+
+    .reviewer_input{
+        width: 100%;
+    }
+
+    .reviewer_input textarea{
+        width: 100%;
+        height: 30vh;
+
+
+    }
+
+    .reviewer_input button{
+        width: 100%;
+        margin-top: 10px;
+
+    }
+
+
+
+
+
+
+
+    .product{
+        margin-top: 20px;
+    }
+
+}
+
+
+
+.container{
+    margin-top: 0;
+}
+.navbar-nav{
+    font-size: 18px;
+    align-items: center;
+}
+
+
+.button-group .product_details{
+    color: white;
+    background: #4c7afd;
+    padding: 5px 13%;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
